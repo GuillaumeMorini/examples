@@ -20,5 +20,5 @@ queried later even after the bootstrapping (cloudformation) completes.
 {{ var `/provider/image/hasDocker`    ( metadata `vars/provider/image/hasDocker` )}}
 {{ end }}
 
-{{ var `/local/install/docker` (var `/provider/image/hasDocker` | default `no` | eq `no` ) }}
+{{ var `/local/install/docker` `no` }}
 {{ var `/local/docker/user` `ubuntu` }}
