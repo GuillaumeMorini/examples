@@ -1,5 +1,6 @@
 {{ source "common.ikt" }}
 rm -f  /var/lib/dpkg/lock
+rm -f /var/lib/apt/lists/lock
 apt-get update -y
 apt-get upgrade -y
 apt-get install -y jq
